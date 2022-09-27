@@ -1,4 +1,4 @@
-#include <iostream>
+include <iostream>
 #include <cmath>
 
 int main() {
@@ -26,5 +26,5 @@ int main() {
         std::cout << "Vzdelani je jine/n";
     }
         std::ofstream vystupni_soubor ("vystup.txt");
-        vystupni_soubor << "jmeno" << jmeno << "/n';
+        vystupni_soubor << "jmeno" << jmeno << "/n";
     }
