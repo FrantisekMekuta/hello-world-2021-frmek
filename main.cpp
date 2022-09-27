@@ -3,16 +3,28 @@
 
 int main() {
 
-    std::cout <<"Ahoj\n";
+    std::cout <<"Zadej cislo:";
+    int cele_cislo;
+    std::cin >> cele_cislo;
 
-    int a = 15;
-    int d = 7;
+    std::cout << "Cislo = " << cele_cislo << "n/";
 
-    float b = 45.5;
+    std::cout << "Zadej jmeno: ";
+    std::string jmeno;
+    std::cin >> jmeno;
 
-    float c = std::sqrt(b);
+    std::cout << "Jmeno je " << jmeno << "/n";
 
-    std::cout <<"Cislo c = " << a / float(d) << "\n";
+    enum typ_vzdelani {zs,ss,vs};
 
-    return 0;
+    typ_vzdelani skola = ss;
+
+    if (skola == ss) {
+    std::cout << "Vzdelani je stredni skola/n";
+    }
+    else
+        std::cout << "Vzdelani je jine/n";
+    }
+        std::ofstream vystupni_soubor ("vystup.txt");
+        vystupni_soubor << "jmeno" << jmeno << "/n';
     }
